@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build and run Jupyter Notebook
       run: |
-        docker build -t Project-Data-Modeling-with-Apache-Cassandra:latest .
-        docker docker run -p 9042:9042 -p 8888:8888 Project-Data-Modeling-with-Apache-Cassandra
+        docker build -t project-data-modeling-with-apache-cassandra:latest .
+        docker docker run -p 9042:9042 -p 8888:8888 project-data-modeling-with-apache-cassandra
