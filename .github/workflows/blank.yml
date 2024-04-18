@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build and run Jupyter Notebook
       run: |
-        docker build -t my-jupyter-notebook .
-        docker run -p 8888:8888 my-jupyter-notebook
+        docker build -t dockerfile .
+        docker docker run -p 9042:9042 -p 8888:8888 dockerfile
