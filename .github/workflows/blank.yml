@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and run Jupyter Notebook
+      run: |
+        docker build -t my-jupyter-notebook .
+        docker run -p 8888:8888 my-jupyter-notebook
