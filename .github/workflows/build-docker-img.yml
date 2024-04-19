@@ -12,4 +12,4 @@ jobs:
     - name: Build and run Jupyter Notebook
       run: |
         docker build -t project-data-modeling-with-apache-cassandra:latest .
-        docker docker run -p 9042:9042 -p 8888:8888 project-data-modeling-with-apache-cassandra
+        docker run -p 9042:9042 -p 8888:8888 project-data-modeling-with-apache-cassandra
