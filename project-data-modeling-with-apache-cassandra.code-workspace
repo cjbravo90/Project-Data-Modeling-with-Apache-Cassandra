@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "project-data-modeling-with-apache-cassandra",
+			"path": "."
+		},
+		{
+			"name": "event_data",
+			"path": "../../../../../Downloads/data_modeling_with_apache_cassandra-master/event_data"
+		},
+		{
+			"name": "images",
+			"path": "../../../../../Downloads/data_modeling_with_apache_cassandra-master/images"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,36 @@
+# Cassandra configuration file
+
+# Node IP address and port
+cluster_name: 'LocalCluster'
+listen_address: localhost
+seed_provider:
+  - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+    parameters:
+      - seeds: "127.0.0.1"
+
+# Directory where Cassandra should store data on disk
+data_file_directories:
+  - /var/lib/cassandra/data
+
+# Commit log directory
+commitlog_directory: /var/lib/cassandra/commitlog
+
+# Distributed cache directory
+cdc_raw_directory: /var/lib/cassandra/cdc_raw
+
+# Directory where hints data is stored
+hints_directory: /var/lib/cassandra/hints
+
+# The address or interface to bind the Cassandra native transport server to.
+start_native_transport: true
+native_transport_port: 9042
+
+# Port for the Thrift RPC service
+start_rpc: false
+
+# Port for JMX monitoring
+start_jmx_reporter: false
+
+# Authentication settings
+authenticator: AllowAllAuthenticator
+authorizer: AllowAllAuthorizer
